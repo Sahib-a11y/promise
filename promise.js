@@ -14,7 +14,7 @@ new Promise((resolve,reject)=> {
     setTimeout(() => {
         console.log("new promise also executed")
         resolve("resolved")
-    },2000)
+    },1000)
 }).then(()=>{
     console.log("new promise done then")
 })
@@ -23,7 +23,7 @@ const prom = new Promise(function(res,rej){
     setTimeout(() =>{
         console.log("promimg being done",prom)
         res({username:"shaib565" , email:"sahib@gmail.com"})
-    },2000)
+    },1000)
 })
 
 prom.then((user)=>{
@@ -38,7 +38,7 @@ const promised = new Promise((resolve, reject) => {
        }else{
         reject('EROR , SOMETHING WENT WRONG')
        }
-    }, 3000);
+    }, 1000);
 })
 
 promised.then((user) => {
